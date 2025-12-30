@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Day Predictor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+  <!-- Screen 1 -->
+  <div id="screen-question">
+    <h1>AI Day Predictor 🤖</h1>
+    <span class="warning">Please kids stay away</span>
+
+    <h2>Tomorrow is which day?</h2>
+
+    <div class="options">
+      <button class="day">Sunday</button>
+      <button class="day">Monday</button>
+      <button class="day">Tuesday</button>
+      <button class="day">Wednesday</button>
+      <button class="day">Thursday</button>
+      <button class="day">Friday</button>
+      <button class="day">Saturday</button>
+    </div>
+
+    <button id="predictBtn" disabled>✨ PREDICT ✨</button>
+  </div>
+
+  <!-- Screen 2 -->
+  <div id="screen-loading" class="hidden">
+    <div class="loader"></div>
+    <h3>Consulting AI...</h3>
+  </div>
+
+  <!-- Screen 3 -->
+  <div id="screen-result" class="hidden">
+    <h2 id="resultTitle"></h2>
+    <div class="iq" id="resultText"></div>
+    <button id="restart">🔄 Try Again</button>
+  </div>
+
+  <!-- 🔊 SOUND CREDITS -->
+  <div class="credits">
+    <p>
+      Aura Sound by
+      <a href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=405470" target="_blank">
+        DRAGON-STUDIO
+      </a>
+      from
+      <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=405470" target="_blank">
+        Pixabay
+      </a>
+    </p>
+
+    <p>
+      Funny Sound by
+      <a href="https://pixabay.com/users/mangaletp-22539531/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=406018" target="_blank">
+        mangaletp
+      </a>
+      from
+      <a href="https://pixabay.com/sound-effects/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=406018" target="_blank">
+        Pixabay
+      </a>
+    </p>
+  </div>
+
+</div>
+
+<!-- AUDIO FILES -->
+<audio id="rightSound" src="right.mp3"></audio>
+<audio id="wrongSound" src="wrong.mp3"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
